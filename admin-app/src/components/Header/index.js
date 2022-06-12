@@ -4,7 +4,7 @@ const index = props => {
     return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand href="#home">Admin DashBoard</Navbar.Brand>
+  <Navbar.Brand href="/">Admin DashBoard</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
