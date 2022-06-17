@@ -21,7 +21,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.6",
     "react-bootstrap": "^2.4.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "slugify": "^1.6.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"

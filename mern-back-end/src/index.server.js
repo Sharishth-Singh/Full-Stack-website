@@ -1,17 +1,18 @@
 const express = require('express');
 const app = express();
 const env= require('dotenv');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const authRoutes = require('./routes/auth');
 const adminRoutes = require('./routes/admin/auth');
-
+const categoryRoutes = require('./routes/category');
 // endiromenth vari
 env.config();
-app.use(bodyParser());
+app.use(express.json());
 app.use('/api',authRoutes);
 app.use('/api',adminRoutes);
+app.use('/api',categoryRoutes);
+
 // connection
 // mongodb+srv://root:<password>@cluster0.kvo6v.mongodb.net/?retryWrites=true&w=majority
 mongoose.connect(
